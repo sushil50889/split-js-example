@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="split js example project" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="split a">It's ok to show all your colors.</div>
+        <div class="split b">Everything's not black and white. We choose to make bad decisions or not.</div>
+    </div>
+
+
+    <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+    <script>
+        Split(['.a', '.b'], {
+            gutterSize: 5,
+            sizes: [50, 50],
+            minSize: [300, 300]
+        });
+    </script>
+</body>
+
+</html>
